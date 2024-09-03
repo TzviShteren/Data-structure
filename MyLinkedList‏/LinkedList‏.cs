@@ -14,19 +14,19 @@ namespace MyLinkedList‏
         }
     }
 
-    internal class MyLinkedList‏
+    internal class LinkedList
     {
 
         private Node? _head;
 
         // O(1)
-        public MyLinkedList‏()
+        public LinkedList()
         {
             _head = null;
         }
 
         // O(1)
-        public MyLinkedList‏(int data)
+        public LinkedList(int data)
         {
             Node newNode = new(data);
             _head = newNode;
