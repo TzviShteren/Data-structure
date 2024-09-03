@@ -1,0 +1,14 @@
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\bin\Debug\net8.0\StartOfData.exe
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\bin\Debug\net8.0\StartOfData.deps.json
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\bin\Debug\net8.0\StartOfData.runtimeconfig.json
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\bin\Debug\net8.0\StartOfData.dll
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\bin\Debug\net8.0\StartOfData.pdb
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.AssemblyInfoInputs.cache
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.AssemblyInfo.cs
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.csproj.CoreCompileInputs.cache
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.dll
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\refint\StartOfData.dll
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.pdb
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.genruntimeconfig.cache
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\ref\StartOfData.dll
