@@ -37,7 +37,10 @@ namespace MyLinkedList‏
         {
             Node newNode = new(data);
             if (_head == null)
+            {
                 _head = newNode;
+                return;
+            }
             var temp = _head;
             while (temp.next != null)
             {

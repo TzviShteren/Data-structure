@@ -12,3 +12,4 @@ C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\refi
 C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.pdb
 C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.genruntimeconfig.cache
 C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\ref\StartOfData.dll
+C:\Users\Stern\Desktop\Data codekod2\C#\CAData\StartOfData\obj\Debug\net8.0\StartOfData.sourcelink.json
