@@ -52,13 +52,13 @@ namespace MyLinkedList‏
         // O(n)
         public string Display()
         {
-            if (_head == null) return "null (Empty)";
+            if (_head == null) return "";
             Node? tamp = _head;
-            string repr = $"{tamp.data} -> ";
+            string repr = $"{tamp.data}";
             while (tamp.next != null)
             {
                 tamp = tamp.next;
-                repr += $"{tamp.data} -> ";
+                repr += $" -> {tamp.data}";
             }
             return $"{repr}";
         }
@@ -81,19 +81,23 @@ namespace MyLinkedList‏
         public void RemoveValue(int data)
         {
             if (_head == null) return;
-            Node? tamp = _head;
-            while (tamp.next != null)
-            {
-                if (tamp.data == data) // ? tamp.next!.data
-                {
-                    if (tamp.next!.next != null)
-                        tamp.next = null;
 
-                    tamp.next = tamp.next!.next;
-                    tamp = null;
+            if (_head.data == data)
+            {
+                _head = _head.next;
+                return;
+            }
+
+            Node? temp = _head;
+
+            while (temp.next != null)
+            {
+                if (temp.next.data == data)
+                {
+                    temp.next = temp.next.next;
                     return;
                 }
-                tamp = tamp.next;
+                temp = temp.next;
             }
         }
 
@@ -101,18 +105,18 @@ namespace MyLinkedList‏
         public void RemoveAllValues(int data)
         {
             if (_head == null) return;
-            Node? tamp = _head;
-            while (tamp.next != null)
-            {
-                if (tamp.data == data) // ? tamp.next!.data
-                {
-                    if (tamp.next!.next != null)
-                        tamp.next = null;
 
-                    tamp.next = tamp.next!.next;
-                    tamp = null;
-                }
-                tamp = tamp.next;
+            while (_head != null && _head.data == data)
+                _head = _head.next;
+
+            Node? temp = _head;
+
+            while (temp != null && temp.next != null)
+            {
+                if (temp.next.data == data)
+                    temp.next = temp.next.next;
+                else
+                    temp = temp.next;
             }
         }
 
@@ -123,12 +127,15 @@ namespace MyLinkedList‏
                 throw new NotImplementedException($"index {index} Does not exist in the Linked List");
             if (_head == null) return;
             var tamp = _head;
-            for (int i = 0; i < index; i++)
+            for (int i = 0; i < index - 1; i++)
             {
                 tamp = tamp!.next;
             }
             if (tamp!.next!.next == null)
+            {
                 tamp.next = null;
+                return;
+            }
             tamp.next = tamp.next!.next;
             tamp = null;
         }
@@ -144,7 +151,10 @@ namespace MyLinkedList‏
                 if(tamp.data == data)
                     return index;
                 index++;
+                tamp = tamp!.next;
             }
+            if (tamp.data == data)
+                return index;
             return -1;
         }
 
@@ -152,9 +162,9 @@ namespace MyLinkedList‏
         public int Get(int index)
         {
             if (index >= Length())
-                throw new NotImplementedException($"index {index} Does not exist in the Linked List");
+                return -1;
             if (_head == null)
-                throw new NotImplementedException($"The Linked List is empty");
+                return -1;
             var tamp = _head;
             for (int i = 0; i < index; i++)
             {
